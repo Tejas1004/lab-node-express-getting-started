@@ -13,11 +13,11 @@ app.get("/" , (req,res)=>{
 const http=require("http");
 http.createServer((req, res) => {
     if (req.url === "/") {
-      res.write("hello from node");
+      res.write("<h1> hello from node </h1>");
       res.end();
     } else {
       res.write("404");
       res.end();
     }
   })
-  .listen(3000, () => console.log("Server is running in 3000"));
+  .listen(4000, () => console.log("Server is running in 4000"));
